@@ -24,6 +24,7 @@ public class Program {
 			System.out.printf("Tax payer #%d data:\n", i);
 			System.out.print("Individual or company (i/c)? ");
 			char type = sc.next().charAt(0);
+			sc.nextLine();
 			System.out.print("Name: ");
 			String name = sc.nextLine();
 			System.out.print("Anual income: ");
@@ -48,7 +49,7 @@ public class Program {
 			sum += tx.tax();
 		}
 		
-		System.out.println("znTOTAL TAXE: $" + sum);
+		System.out.println("\nTOTAL TAXE: $" + sum);
 		
 		sc.close();
 
